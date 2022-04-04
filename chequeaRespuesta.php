@@ -15,6 +15,7 @@ $consulta ->store_result();
 $consulta ->bind_result($correcta);
 $consulta ->fetch();
 if ($correcta == $respuesta){
+    
     echo 'Acertaste';
 }
 else{
