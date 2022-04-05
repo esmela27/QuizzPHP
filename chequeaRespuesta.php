@@ -15,10 +15,10 @@ $consulta ->store_result();
 $consulta ->bind_result($correcta);
 $consulta ->fetch();
 if ($correcta == $respuesta){
-    
-    echo 'Acertaste';
+
+    echo '<br><div class="alert alert-success" role="alert">CORRECTO</div>';
 }
 else{
-    echo 'fallastes';
+    echo '<br><div class="alert alert-danger" role="alert">FALLASTES</div>';
 }
 ?>
